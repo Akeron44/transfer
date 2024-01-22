@@ -1,24 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import { useEffect, useState } from "react";
+import Header from "./components/Header";
+import LogIn from "./components/Log/LogIn";
+import Main from "./components/Main";
 
 function App() {
+  //CHECK IF THE MANAGER LOGGED IN
+  const [managerIsLoggedIn, setManagerIsLoggedIn] = useState(false);
+
+  function logInManagerHandler() {
+    setManagerIsLoggedIn(true);
+  };
+
+  function logOutManagerHandler() {
+    setManagerIsLoggedIn(false);
+  };
+
+  //CHECK ID THERE'S ALREADY A LOGGED MANAGER IN THE LOCAL STORAGE
+  const loggedManager = localStorage.getItem("teamManager");
+
+  useEffect(() => {
+    if(loggedManager) {
+      setManagerIsLoggedIn(true);
+    }
+  }, [loggedManager]);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      {!managerIsLoggedIn ? (
+        <LogIn logInManager={logInManagerHandler} />
+      ) : (
+        <>
+          <Header logOutManager={logOutManagerHandler} />
+          <Main />
+        </>
+      )}
+    </>
   );
 }
 

@@ -1,0 +1,27 @@
+.hover {
+    position: absolute;
+    padding: .4rem .8rem;
+    background-color: #fff;
+    color: #111;
+    z-index: 99999;
+    font-weight: 500;
+    border-radius: 5px;
+}
+
+.arrow {
+    content: '';
+    position: absolute;
+    top: 65%;
+    margin-top: -10px; 
+    border-width: .7rem; 
+    border-style: solid;
+}
+
+.right {
+    left: 97%; 
+    border-color: transparent transparent transparent #fff;
+}
+.left {
+    right: 97%; 
+    border-color: transparent #fff transparent transparent; 
+}

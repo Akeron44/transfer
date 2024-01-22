@@ -1,0 +1,163 @@
+.negotiations__section {
+  background-color: #071c2e;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  border-radius: 5px;
+  /* overflow: hidden; */
+  margin-bottom: 1.6rem;
+  max-height: 100vh;
+}
+
+.ion_icon {
+  display: none;
+  color: #fff;
+  height: 24px;
+  width: 24px;
+}
+
+.sort {
+  background-color: transparent;
+  color: #fff;
+  padding: .4rem .8rem;
+  border-radius: 5px;
+  border: 1px solid #fff;
+  font-weight: 600;
+  min-width: 10rem;
+}
+
+.sort:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.15rem rgba(255, 255, 255, 0.4);
+}
+
+
+.ng__header {
+  color: #fff;
+  display: flex;
+  padding: 1.6rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #114673;
+}
+
+.scroll {
+  overflow: scroll;
+  width: 100%;
+}
+
+.offers__sent {
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 0.8px;
+}
+
+.noOffer {
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 1.6rem;
+}
+
+
+/**************************/
+/* BELOW 1072px (Landscape Tablets) */
+/**************************/
+@media (max-width: 67em) {
+  .negotiations__section {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    transform: translateX(100%);
+    /* z-index: 999; */
+    transition: all 0.4s ease-out;
+    background-color: rgb(7, 28, 46, 0.8);
+    backdrop-filter: blur(30px);
+    border-radius: 0px;
+
+    padding: 3.2rem 3.2rem 0 3.2rem;
+    width: 100vw;
+    height: 100vh;
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+  }
+
+  .swipe__left {
+    transform: translate(0);
+    transition: all 0.4s ease-out;
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    position: fixed;
+  }
+
+  .ion_icon {
+    display: block;
+    color: #071c2e;
+    background-color: #fff;
+    padding: 0.8rem 1.6rem;
+    height: 24px;
+    width: 24px;
+    position: fixed;
+    top: 2%;
+    left: 2%;
+    border-radius: 5px;
+  }
+
+  .ng__header {
+    width: 80%;
+  }
+
+  .scroll {
+    overflow: scroll;
+    width: 80%;
+  }
+}
+
+.ldsFacebook {
+  margin-top: 6.4rem;
+  display: inline-block;
+  position: relative;
+  width: 40px;
+  height: 40px;
+}
+.ldsFacebook div {
+  display: inline-block;
+  position: absolute;
+  left: 8px;
+  width: 8px;
+  background: #fff;
+  animation: ldsFacebook 1.2s cubic-bezier(0, 0.5, 0.5, 1) infinite;
+}
+.ldsFacebook div:nth-child(1) {
+  left: 8px;
+  animation-delay: -0.24s;
+}
+.ldsFacebook div:nth-child(2) {
+  left: 32px;
+  animation-delay: -0.12s;
+}
+.ldsFacebook div:nth-child(3) {
+  left: 56px;
+  animation-delay: 0;
+}
+@keyframes ldsFacebook {
+  0% {
+    top: 8px;
+    height: 32px;
+  }
+  50%,
+  100% {
+    top: 24px;
+    height: 18px;
+  }
+}

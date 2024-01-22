@@ -1,0 +1,190 @@
+.negotiations__section {
+  /* display: block; */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: start;
+  align-items: center;
+  top: 0;
+  right: 0%;
+  transform: translateX(100%);
+  z-index: 999;
+  transition: all 0.4s ease-out;
+  background-color: rgb(7, 28, 46, 0.8);
+  backdrop-filter: blur(30px);
+  border-radius: 0px;
+
+  padding: 6.4rem 3.2rem 0 3.2rem;
+  width: 100vw;
+  height: 100vh;
+
+  /* 1) Hide it visually */
+  opacity: 0;
+
+  /* 2) Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+
+  /* 3) Hide it from screen readers */
+  visibility: hidden;
+}
+
+.swipe__left {
+  transform: translate(0);
+  transition: all 0.4s ease-out;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  position: fixed;
+}
+
+.ion_icon {
+  display: block;
+  color: #071c2e;
+  background-color: #fff;
+  padding: 0.8rem 1.6rem;
+  height: 24px;
+  width: 24px;
+  position: fixed;
+  top: 5%;
+  left: 3%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.scroll {
+  overflow: scroll;
+  width: 80%;
+}
+
+.ng__header {
+  color: #fff;
+  display: flex;
+  padding: 1.6rem;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  background-color: #114673;
+  border-radius: 5px;
+  width: 80%;
+}
+
+.ng__list:nth-child(odd) {
+  border-bottom: 2px solid #030e17;
+  border-left: 2px solid #030e17;
+  border-right: 2px solid #030e17;
+}
+
+.ng__list:nth-child(even) {
+  background-color: #030e17;
+}
+
+.offers__sent {
+  color: #fff;
+  font-size: 1.8rem;
+  letter-spacing: 0.8px;
+}
+
+.edit__button {
+  border: none;
+  background-color: #0a2a45;
+  color: #fff;
+  padding: 0.8rem 1.6rem;
+  font-weight: 600;
+  font-size: 1.6rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit__button:hover,
+.edit__button:visited {
+  color: #e9f3fd;
+}
+
+.offer__details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 0.8rem 1.6rem;
+  flex-direction: column;
+  /* background-color: #030e17; */
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.offer__details__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.offer__status__container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.2rem;
+  margin-top: 2.4rem;
+}
+
+.offer__status__container button {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.accept__button {
+  color: #102914;
+  background-color: #51cf66;
+}
+
+.decline__button {
+  background-color: #ff6b6b;
+  color: #331515;
+}
+
+.name__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.offer__status {
+  color: #a7d1f5;
+}
+
+.ng__list img {
+  height: 3rem;
+  background-color: #fff;
+  width: 3rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.img__height {
+  height: 2.4rem;
+}
+
+.noOffer {
+  font-size: 1.6rem;
+  color: #fff;
+  text-align: center;
+  margin-top: 1.6rem;
+}
+
+.declined {
+ color: #ff6b6b;
+}
+
+.accepted {
+ color: #51cf66;
+}
+

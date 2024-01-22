@@ -1,0 +1,131 @@
+.header {
+  background-color: #114673;
+  padding: 1.6rem 4.8rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  position: relative;
+}
+
+.header h1 {
+  font-size: 2.4rem;
+  text-transform: uppercase;
+  margin-right: -1.2rem;
+}
+
+.ion_icon {
+  color: #fff;
+  height: 24px;
+  width: 24px;
+  /* margin-left: -2.4rem; */
+}
+
+.logo_container {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.logo {
+  height: 6.2rem;
+}
+
+.action_container {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 2.4rem;
+}
+
+.action_buttons {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.logout {
+    display: block;
+    display: flex;
+}
+
+.primary__secondary {
+    display: none;
+}
+
+.priority {
+  background-color: #0a2a45;
+}
+
+.secondary {
+  background-color: #0a2a45;
+  display: none;
+}
+
+.action_buttons button {
+  background-color: transparent;
+  border: none;
+  color: #fff;
+  font-size: 1.6rem;
+  margin-right: .4rem;
+  cursor: pointer;
+}
+
+.offers__received {
+  margin-right: 1.2rem;
+}
+
+.action_buttons button:visited,
+.action_buttons button:hover {
+  color: #cfdae3;
+}
+
+/**************************/
+/* BELOW 1072px  */
+/**************************/
+@media (max-width: 67em) {
+  .secondary {
+    background-color: #0a2a45;
+    display: block;
+    display: flex;
+  }
+}
+
+/**************************/
+/* BELOW 784px  */
+/**************************/
+@media (max-width: 49em) {
+    .header {
+        padding: 1.6rem 2.4rem;
+      }
+    .primary__secondary {
+        background-color: #0a2a45;
+        display: block;
+        display: flex;
+    }
+    .priority,
+    .secondary {
+        display: none;
+    }
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+
+@media (max-width: 37em) {
+    .header h1 {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        margin-right: -1.2rem;
+    }
+    .header h1 {
+        font-size: 2rem;
+    } 
+    .logout {
+        display: none;
+    }
+}
+

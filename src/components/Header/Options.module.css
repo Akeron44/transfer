@@ -1,0 +1,121 @@
+.options__section {
+  /* display: block; */
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  justify-content: start;
+  align-items: center;
+  top: 0;
+  right: 0%;
+  transform: translateX(100%);
+  z-index: 999;
+  transition: all 0.4s ease-out;
+  background-color: rgb(7, 28, 46, 0.8);
+  backdrop-filter: blur(30px);
+  border-radius: 0px;
+
+  padding: 6.4rem 3.2rem 0 3.2rem;
+  width: 100vw;
+  height: 100vh;
+
+  /* 1) Hide it visually */
+  opacity: 0;
+
+  /* 2) Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+
+  /* 3) Hide it from screen readers */
+  visibility: hidden;
+}
+
+.swipe__left {
+  transform: translate(0);
+  transition: all 0.4s ease-out;
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  position: fixed;
+}
+
+.ion_icon {
+  display: block;
+  color: #071c2e;
+  background-color: #fff;
+  padding: 0.8rem 1.6rem;
+  height: 24px;
+  width: 24px;
+  position: fixed;
+  top: 5%;
+  left: 3%;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.action__buttons__container {
+  width: 100%;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 6.4rem;
+}
+
+.ion_icon__logout {
+color: #d4ebff;
+  height: 24px;
+  width: 24px;
+  /* margin-left: -2.4rem; */
+}
+
+.action_buttons {
+  display: flex;
+  align-items: center;
+  padding: 0.8rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 80%;
+}
+
+.action_buttons button {
+  background-color: transparent;
+  border: none;
+  font-weight: 700;
+  color: #d4ebff;
+  font-size: 2.4rem;
+  margin-right: 0.8rem;
+}
+.action_buttons button:hover {
+  cursor: pointer;
+  color: #a7d1f5;
+  font-size: 2.4rem;
+  margin-right: 0.8rem;
+}
+.action_buttons button:hover .ion_icon__logout{
+  cursor: pointer;
+  color: #a7d1f5;
+}
+
+.logout {
+  display: none;
+}
+
+/**************************/
+/* BELOW 592px (Phones) */
+/**************************/
+
+@media (max-width: 37em) {
+    .header h1 {
+        font-size: 2.4rem;
+        text-transform: uppercase;
+        margin-right: -1.2rem;
+    }
+    .header h1 {
+        font-size: 2rem;
+    } 
+    .logout {
+        display: block;
+        display: flex;
+    }
+}
+

@@ -1,0 +1,80 @@
+.backdrop {
+  height: 100vh;
+  background-color: rgb(17, 17, 17, 0.7);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  z-index: 8888;
+}
+
+.modal {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 9999;
+  max-height: 40%;
+  width: 40%;
+  background-color: #114673;
+  border-radius: 5px;
+  padding: 1.2rem 1.6rem;
+  color: #cfdae3;
+}
+
+.title__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #cfdae3;
+  padding-bottom: 0.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+  color: #fff;
+}
+
+.ion_icon {
+  color: #cfdae3;
+  height: 3.2rem;
+  width: 3.2rem;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+}
+.ion_icon:hover {
+  color: #fff;
+  transition: all 0.3s ease;
+}
+
+.message__container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+.message {
+  font-size: 1.6rem;
+  color: #cfdae3;
+}
+
+.message__container button {
+  align-self: flex-end;
+  padding: 0.8rem 1.2rem;
+  font-weight: 600;
+  background-color: #cfdae3;
+  border: none;
+  border-radius: 5px;
+  color: #114673;
+  transition: all .2s ease;
+}
+.message__container button:hover {
+  cursor: pointer;
+  background-color: #e7edf1;
+  color: #030e17;
+  transition: all .2s ease;
+}

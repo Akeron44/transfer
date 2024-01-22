@@ -1,0 +1,167 @@
+.ng__list:nth-child(even) {
+  background-color: #030e17;
+}
+
+.player__img {
+  height: 3rem;
+  background-color: #fff;
+  border-radius: 50%;
+  width: 3rem;
+  object-fit: cover;
+}
+.team__img {
+  height: 3rem;
+}
+.team__img:last-child {
+  margin-left: 1.2rem;
+}
+
+.offer__details {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 0.8rem 1.6rem;
+  flex-direction: column;
+  /* background-color: #030e17; */
+  color: #fff;
+  font-size: 1.2rem;
+}
+
+.offer__details__container {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  width: 100%;
+  flex-direction: column;
+  gap: 1.2rem;
+  position: relative;
+}
+
+.name__price {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+}
+
+.label {
+  font-weight: 500;
+}
+
+.input {
+  padding: 0.4rem 0.8rem;
+  border-radius: 5px;
+  border: none;
+  width: 6.4rem;
+}
+
+.edit__icon {
+  color: #0a2a45;
+  background-color: #fff;
+  padding: 0.2rem 0.4rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  position: absolute;
+  border-radius: 5px;
+  top: 5%;
+  right: 0;
+  cursor: pointer;
+}
+
+.hover__icon {
+  top: 0;
+  right: 0.5rem;
+}
+
+.cancel__icon {
+  color: #331515;
+  background-color: #ff6b6b;
+  padding: 0.2rem 0.4rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  position: absolute;
+  border-radius: 5px;
+  top: 5%;
+  right: 13%;
+  cursor: pointer;
+}
+
+.send__icon {
+  color: #102914;
+  background-color: #51cf66;
+  padding: 0.2rem 0.4rem;
+  height: 2.4rem;
+  width: 2.4rem;
+  position: absolute;
+  border-radius: 5px;
+  top: 5%;
+  right: 0;
+  cursor: pointer;
+}
+
+.updated__icon {
+  color: #102914;
+  background-color: #51cf66;
+  padding: 0.2rem 0.4rem;
+  height: 1.8rem;
+  width: 1.8rem;
+  position: absolute;
+  border-radius: 50%;
+  top: 5%;
+  right: 0;
+}
+.updated__icon:hover {
+  background-color: #74d985;
+  cursor: pointer;
+}
+
+.send__disabled {
+  cursor: not-allowed;
+  background-color: #495057;
+  color: #b6b9bc;
+}
+
+.offer__status__container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.status {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1.2rem;
+}
+
+.pending {
+  color: #a7d1f5;
+  font-weight: 700;
+}
+
+.declined {
+  color: #ff6b6b;
+  font-weight: 700;
+}
+
+.accepted {
+  color: #51cf66;
+  font-weight: 700;
+}
+
+.img__height {
+  height: 2.4rem;
+}
+
+/**************************/
+/* BELOW 1200px (Landscape Tablets) */
+/**************************/
+@media (max-width: 75em) {
+  .offer__details__container {
+    flex-direction: column;
+    align-items: start;
+    gap: 1.2rem;
+  }
+}

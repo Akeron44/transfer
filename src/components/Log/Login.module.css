@@ -1,0 +1,58 @@
+/* Login.css */
+  
+  .container {
+    max-width: 60rem;
+    width: 100%;
+    padding: 4rem;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(to right, #0a2a45, #192a56); /* Darker linear gradient background for the form */
+    color: #fff;
+    border-radius: 5px;
+    margin: 9.6rem auto;
+  }
+  
+  .container h1 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  
+  .container h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+  }
+  
+  .container select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 4px;
+    background: linear-gradient(to right, #405b86, #314365); /* Darker linear gradient background for the select */
+    color: #fff;
+  }
+  
+  .container select:focus {
+    outline: none;
+  }
+  
+  .container button {
+    width: 100%;
+    padding: 12px;
+    background-color: #1b6fb8; /* Darker linear gradient background for the button */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .container button:disabled {
+    background: linear-gradient(to right, #555, #555);
+    cursor: not-allowed;
+  }
+  
+  .container button:hover {
+    background-color: #1861a1; /* Darker gradient on hover */
+  }
+  

@@ -1,0 +1,49 @@
+.players__list__section {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+  overflow: scroll;
+  position: relative;
+}
+
+.players__container__wrap {
+  padding: 1.2rem 1.6rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  color: #fff;
+  gap: 1.2rem;
+}
+
+.player__position {
+  height: 40%;
+}
+
+.players__list__section h3 {
+  font-size: 1.6rem;
+}
+
+.forward {
+  color: #ff6b6b;
+  text-transform: capitalize;
+}
+.midfielder {
+  color: #51cf66;
+  text-transform: capitalize;
+}
+.defender {
+  color: #4dabf7;
+  text-transform: capitalize;
+}
+.goalkeeper {
+  color: #ff922b;
+  text-transform: capitalize;
+}
+
+@media (max-width: 67em) {
+  .players__list__section {
+    grid-column: 1/-1;
+    overflow: visible;
+  }
+}
+

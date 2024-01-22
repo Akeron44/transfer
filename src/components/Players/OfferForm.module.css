@@ -1,0 +1,127 @@
+.ion_icon {
+  position: absolute;
+  /* top: 45%; */
+  top: calc(45% - 10px);
+  /* right: -5%; */
+  right: calc(-5% - 3px);
+  /* transform: translate(5%, -45%); */
+  color: #0a2a45;
+  background-color: #fff;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  z-index: 20;
+}
+
+.ion_icon__check {
+  position: absolute;
+  /* top: 45%; */
+  top: calc(45% - 10px);
+  /* right: -5%; */
+  right: calc(-5% - 5px);
+  /* transform: translate(5%, -45%); */
+  color: #fff;
+  background-color: #41a652;
+  height: 24px;
+  width: 24px;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease;
+  padding: .15rem;
+  z-index: 20;
+}
+
+.arrow__rotate {
+  transform: rotate(180deg);
+  transition: all 0.3s ease;
+  color: #114673;
+}
+
+.form {
+  background-color: #071c2e;
+  padding: 0.8rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 2.4rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+
+  height: 10rem;
+  width: 9.5rem;
+  position: absolute;
+  right: 0%;
+  top: 45%;
+  transform: translate(0%, -45%);
+  z-index: 1;
+  transition: all 0.4s ease-in;
+
+  /* 1) Hide it visually */
+  opacity: 0;
+
+  /* 2) Make it unaccessible to mouse and keyboard */
+  pointer-events: none;
+
+  /* 3) Hide it from screen readers */
+  visibility: hidden;
+}
+
+.slide__right {
+  opacity: 1;
+  pointer-events: auto;
+  visibility: visible;
+  transform: translate(100%, -45%);
+  transition: all 0.4s ease-out;
+  /* z-index: 1; */
+}
+
+.form input {
+  padding: 0.4rem 0.8rem;
+  background-color: #fff;
+  color: #071c2e;
+  border-radius: 5px;
+  border: none;
+  width: 90%;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.button__abled {
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.6rem;
+  color: #fff;
+  background-color: #1861a1;
+  font-weight: 600;
+  border-radius: 5px;
+  transition: all .15s ease;
+}
+
+.button__abled:hover {
+  cursor: pointer;
+  background-color: #114673;
+  transition: all .15s ease;
+}
+
+.button__disabled {
+  border: none;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.6rem;
+  color: #a4a8ab;
+  background-color: #495057;
+  cursor: pointer;
+  font-weight: 600;
+  border-radius: 5px;
+  pointer-events: auto;
+}
+
+@media (max-width: 67em) {
+  .form {
+    width: 9rem;
+  }
+}
